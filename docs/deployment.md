@@ -15,7 +15,11 @@ npm run ci
 npm audit --audit-level=high
 ```
 
-Para GitHub Pages: en el repo, **Settings → Pages → Source: GitHub Actions**.
+Para GitHub Pages: en el repo, **Settings → Pages → Source: GitHub Actions**. El workflow **CD** se lanza con **Actions → CD → Run workflow** (no en cada push, para no duplicar tu deploy en Vercel).
+
+### Si CI falla sin logs de build
+
+GitHub puede rechazar jobs con: *「The job was not started because your account is locked due to a billing issue」*. Solución: [GitHub Billing](https://github.com/settings/billing) — regularizar pago o habilitar Actions en repos públicos. El pipeline es válido: verificar con `npm run ci` en local.
 
 ## Build
 

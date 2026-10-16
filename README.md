@@ -1,7 +1,7 @@
 # Total Recreación — Demo
 
 [![CI](https://github.com/AndreyQuicenoC/total-recreacion-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/AndreyQuicenoC/total-recreacion-demo/actions/workflows/ci.yml)
-[![CD](https://github.com/AndreyQuicenoC/total-recreacion-demo/actions/workflows/deploy.yml/badge.svg)](https://github.com/AndreyQuicenoC/total-recreacion-demo/actions/workflows/deploy.yml)
+[![CD (manual)](https://img.shields.io/badge/CD-GitHub%20Pages-manual?labelColor=555)](https://github.com/AndreyQuicenoC/total-recreacion-demo/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D20-brightgreen)](.nvmrc)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](package.json)

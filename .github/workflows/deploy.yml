@@ -1,8 +1,7 @@
 name: CD
 
 on:
-  push:
-    branches: [main]
+  # Habilitar push a main cuando GitHub Pages y Actions estén activos en la cuenta
   workflow_dispatch:
 
 concurrency:
