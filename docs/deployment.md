@@ -1,5 +1,22 @@
 # Despliegue
 
+## CI/CD (GitHub Actions)
+
+| Workflow | Archivo | Disparador | Propósito |
+|----------|---------|------------|-----------|
+| **CI** | `.github/workflows/ci.yml` | push/PR a `main` | `npm ci`, typecheck, build, audit high+, artifact `dist` |
+| **CD** | `.github/workflows/deploy.yml` | push a `main` | Build con `VITE_BASE_PATH` y deploy a **GitHub Pages** |
+
+Pipeline local equivalente:
+
+```bash
+npm ci
+npm run ci
+npm audit --audit-level=high
+```
+
+Para GitHub Pages: en el repo, **Settings → Pages → Source: GitHub Actions**.
+
 ## Build
 
 ```bash

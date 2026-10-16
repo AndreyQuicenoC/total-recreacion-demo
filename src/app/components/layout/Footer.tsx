@@ -6,7 +6,11 @@ import { Instagram, Facebook, MapPin, Phone, Mail } from "lucide-react";
 import { whatsappLink, BRAND } from "../../lib/helpers";
 import { WithTooltip } from "../common/WithTooltip";
 
-const SITE_MAP = [
+type SiteLink =
+  | { label: string; to: string; href?: never }
+  | { label: string; href: string; to?: never };
+
+const SITE_MAP: SiteLink[] = [
   { label: "Inicio", to: "/" },
   { label: "Sobre Nosotros", to: "/sobre-nosotros" },
   { label: "Únete al equipo", href: whatsappLink("Hola Total Recreación, me gustaría postularme para trabajar con ustedes.") },
@@ -75,7 +79,7 @@ export function Footer() {
           <h3 className="text-white font-semibold mb-3">Mapa del sitio</h3>
           <ul className="space-y-2 text-sm">
             {SITE_MAP.map((l) =>
-              "to" in l ? (
+              l.to ? (
                 <li key={l.label}><Link to={l.to} className="text-white/70 hover:text-[#F2E313] transition">{l.label}</Link></li>
               ) : (
                 <li key={l.label}><a href={l.href} target="_blank" rel="noreferrer" className="text-white/70 hover:text-[#F2E313] transition">{l.label}</a></li>

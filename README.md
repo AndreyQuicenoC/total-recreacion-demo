@@ -1,5 +1,12 @@
 # Total Recreación — Demo
 
+[![CI](https://github.com/AndreyQuicenoC/total-recreacion-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/AndreyQuicenoC/total-recreacion-demo/actions/workflows/ci.yml)
+[![CD](https://github.com/AndreyQuicenoC/total-recreacion-demo/actions/workflows/deploy.yml/badge.svg)](https://github.com/AndreyQuicenoC/total-recreacion-demo/actions/workflows/deploy.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D20-brightgreen)](.nvmrc)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](package.json)
+[![WCAG 2.1 AA](https://img.shields.io/badge/WCAG-2.1%20AA-005A9C)](docs/accessibility.md)
+
 Demo frontend de portafolio para **Total Recreación** (Santiago de Cali, Colombia): empresa de recreación y coordinación de eventos (animación, comida de feria, sonido, gymkanas, fiestas infantiles y activaciones corporativas).
 
 **Diseño y dirección de calidad:** [AndreyQuicenoC](https://github.com/AndreyQuicenoC) — criterios **WCAG 2.1 AA**, **ISO/IEC 25010**, alineación con buenas prácticas **OWASP** para la capa objetivo de backend.

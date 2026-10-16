@@ -38,3 +38,25 @@
 - **Estado:** PASSED
 
 ---
+
+## HU-CI-001 — CI/CD frontend profesional
+
+**Estado:** COMPLETED  
+**Fecha:** 2026-10-15
+
+### Cambios
+
+- Workflows `ci.yml` (typecheck, build, audit, artifact) y `deploy.yml` (GitHub Pages)
+- Scripts `typecheck`, `ci`; TypeScript 5.7 y tipos React
+- Parches de seguridad: `vite@6.4.4`, `react-router@7.18.4`
+- Badges en README; correcciones TS (Footer, Etiquetas, `vite-env.d.ts`)
+
+### Validación V2
+
+| Paso | Evidencia |
+|------|-----------|
+| `npm run ci` | PASS local |
+| `npm audit --audit-level=high` | 0 vulnerabilidades |
+| GitHub Actions | push a `main` |
+
+---

@@ -40,7 +40,6 @@ export function EtiquetasPage() {
       ...s,
       tags: s.tags.filter((x) => x.id !== t.id),
       recreators: s.recreators.map((r) => (r.tagId === t.id ? { ...r, tagId: null } : r)),
-      materials: s.materials.map((m) => (m.tagId === t.id ? { ...m, tagId: null } : m)),
     }));
     toast.success("Etiqueta eliminada. Recreadores afectados quedaron como 'Sin etiqueta'.");
   };
