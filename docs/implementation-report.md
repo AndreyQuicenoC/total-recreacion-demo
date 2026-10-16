@@ -28,7 +28,7 @@
 | Tooltips en botones | FULFILLED | `Button` + `WithTooltip` en nativos |
 | WCAG perceptible/operable | FULFILLED | skip link, ARIA nav, focus-visible |
 | Docs + README | FULFILLED | `docs/*`, README, CHANGELOG |
-| Repo + v1.0.0 | PARTIALLY_FULFILLED | git init, tag `v1.0.0`, remote configurado; crear repo en GitHub y `git push` (ver `docs/deployment.md`) |
+| Repo + v1.0.0 | FULFILLED | Push a `origin/main`, tag `v1.0.0` en GitHub; release vía `gh release create` |
 | Diseño intacto | FULFILLED | sin cambios de tokens/layout |
 | `.ai` ignorado | FULFILLED | `.gitignore` |
 
